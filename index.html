@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <title>ReactZero</title>      
+
+   </head>
+
+   <body>
+
+      <div id="app">
+
+      
+
+      </div>
+
+      <script src="libs/react.js"></script>
+
+      <script src="libs/react-dom.js"></script>
+
+      
+
+      <script>
+         ReactDOM.render(
+
+React.createElement(
+
+   'table',
+
+   {id: 'tabela', border:'1'},
+
+   React.createElement(
+
+      'tr',
+
+      null,                  
+
+      React.createElement('th', null, 'Nome'),
+
+      React.createElement('th', null, 'Marca'),
+
+      React.createElement('th', null, 'Tipo')
+
+   ),
+
+   React.createElement(
+
+      'tr',
+
+      null,                  
+
+      React.createElement('td', null, 'Coca'),
+
+      React.createElement('td', null, 'Coca-cola'),
+
+      React.createElement('th', null, 'Bebida')
+
+
+      
+
+   ),
+
+   React.createElement(
+      'tr',
+
+   null,                  
+
+   React.createElement('td', null, 'Ninho'),
+
+   React.createElement('td', null, 'Nestle'),
+
+   React.createElement('th', null, 'Laticínio')
+
+
+   )    
+),         
+   document.getElementById('app'))
+
+      </script>
+
+   </body>
+
+</html>
