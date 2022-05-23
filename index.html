@@ -7,10 +7,12 @@
       <title>ReactZero</title>      
 
    </head>
+   
 
    <body>
-
-      <div id="app">
+    <h2>Tabela de Produtos</h2>
+      
+    <div id="app">
 
       
 
@@ -29,13 +31,14 @@ React.createElement(
 
    'table',
 
-   {id: 'tabela', border:'1'},
+   {id: 'tabela', border:'2', width:'500'},
 
    React.createElement(
 
       'tr',
 
-      null,                  
+      null,  
+                    
 
       React.createElement('th', null, 'Nome'),
 
@@ -55,7 +58,7 @@ React.createElement(
 
       React.createElement('td', null, 'Coca-cola'),
 
-      React.createElement('th', null, 'Bebida')
+      React.createElement('td', null, 'Bebida')
 
 
       
@@ -71,7 +74,7 @@ React.createElement(
 
    React.createElement('td', null, 'Nestle'),
 
-   React.createElement('th', null, 'Laticínio')
+   React.createElement('td', null, 'Laticínio')
 
 
    )    
