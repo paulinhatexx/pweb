@@ -4,7 +4,7 @@
 
    <head>
 
-      <title>ReactZero</title>      
+      <title>ReceitaReact 1</title>      
 
    </head>
 
@@ -16,42 +16,69 @@
 
       </div>
 
+
+
       <script src="libs/react.js"></script>
 
       <script src="libs/react-dom.js"></script>
 
       <script src="libs/babel.js"></script>
 
-      
+            
 
       <script type="text/babel">
 
-ReactDOM.render(
+         const Cabecalho =() =>{
+            
+            return(
 
-<div id="app">
+            <h1> Minha Tabela de Produtos</h1>
 
-   <table id="tabela" border="1">
+            )
+         } 
 
-      <thead>
 
-         <tr><th>Nome</th><th>Marca</th></tr>
 
-      </thead>
+         const TabelaProdutos = () => {
 
-      <tbody>
+            return(
+               <div>
+            <table id="tabela" border="1" >
 
-         <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
+               <thead>
+                  <Cabecalho/>
 
-      </tbody>
+                        <tr><th>Nome</th><th>Marca</th><th>Tipo</th></tr>
 
-   </table>
+                     </thead>
 
-</div>
+                     <tbody>
 
-,
+                        <tr><td>Coca</td><td>Coca Cola</td><td>Bebidas</td></tr>
 
-document.getElementById("app"))
-      
+                        <tr><td>Ninho</td><td>Nestle</td><td>Laticínio</td></tr>
+
+                     </tbody>
+
+                  </table>
+            </div>
+            )      
+
+         }
+
+         
+
+         ReactDOM.render(
+
+         
+            <TabelaProdutos/>
+
+            ,
+
+            document.getElementById("app"))
+
+
+
       </script>
 
    </body>
