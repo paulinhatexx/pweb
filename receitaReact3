@@ -26,7 +26,7 @@
 
 
 
-      <script src="libs/babel.js"></script>
+      <script src="libs/babel.js" charset="utf-8"></script>
 
 
 
@@ -34,7 +34,7 @@
 
                  
 
-const TabelaBebidas = ({titulo,cabecalhos:[cabecalho1,cabecalho2] }) => {
+const TabelaBebidas = ({titulo,cabecalhos }) => {
 
 
 
@@ -55,26 +55,17 @@ return (
 
 
          <thead>
-
-
-
-            <tr><th>{cabecalho1}</th><th>{cabecalho2}</th></tr>
-
-
-
+            
+            <tr>
+               {cabecalhos.map(c => <th>{c}</th>)}
+               
+            </tr>
+            
          </thead>
 
 
 
-         <tbody>
-
-
-
-            <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
-
-
-
-         </tbody>
+         
 
 
 
@@ -86,7 +77,7 @@ return (
 
 
 
-         )  
+   )  
 
 
 
@@ -96,7 +87,7 @@ return (
 
 
 
-const valoresCabecalhos = ["Nome", "Marca"]
+const valoresCabecalhos = ["Nome", "Marca", "ibu", "dsad", "dfad"]
 
 
 
