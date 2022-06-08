@@ -87,7 +87,7 @@ return (
 
 
 
-const valoresCabecalhos = ["Nome", "Marca", "ibu", "dsad", "dfad"]
+const valoresCabecalhos = ["Nome", "Marca", "ibu"]
 
 
 
