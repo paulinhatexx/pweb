@@ -28,20 +28,20 @@
         border-collapse: collapse;
         border-spacing: 0;
         width: 50%;
-        border: 1px solid rgb(255, 252, 252);
+        border: 1px solid rgb(3, 3, 56);
       }
       
       th, td {
         text-align: left;
         padding: 16px;
-        border: 2px solid rgb(0, 9, 124);
+        border: 2px solid rgb(0, 0, 0);
       }
       
       tr:nth-child(even) {
-        background-color: #7fa5eb;
+        background-color: #b4dbe7;
       
       }
-      tr:hover {background-color: #fefdff;}
+      tr:hover {background-color: #6b8bf7;}
       th {
         padding-top: 13px;
         padding-bottom: 12px;
@@ -114,12 +114,13 @@ return (
             
          </thead>
 
-         <tr>
-               {tabela.map(t => <td>{t}</td>)}
+         <tbody>
+            
+            {tabela.map(obj =><tr>{cabecalhos.map(c => <td>{obj[c]}</td>)}</tr>)}
                
                
                
-            </tr>
+         </tbody>
 
          
 
@@ -145,13 +146,13 @@ return (
 
 const valoresCabecalhos = ["Nome", "Marca", "Tipo"]
 
-const valoresTabela= ["Seridó", "Farinha", "Cereais"]
+let objs= [{Nome:"Farinha",Marca: "Seridó", Tipo:"Cereais"}, {Nome:"Leite",Marca: "Nestle", Tipo:"Laticinios"} , {Nome:"Café",Marca: "Kimimo", Tipo:"Cereais"}]
 
 ReactDOM.render(
 
 
 
-<TabelaBebidas titulo="Minha Tabela de Produtos" cabecalhos={ valoresCabecalhos } tabela= {valoresTabela}/>
+<TabelaBebidas titulo="Minha Tabela de Produtos" cabecalhos={ valoresCabecalhos } tabela= {objs}/>
 
 
 
