@@ -2,12 +2,7 @@
 
 <html>
 
-   <head>
-
-      <title>ReceitaReact - Classes</title>      
-
-   </head>
-
+   
    <body>
 
       <div id="app">
@@ -32,6 +27,10 @@
          render(){
             return (
             <div>
+            
+               <h1>{titulo}</h1>
+               
+               
                <table id="tabela" border="1">
 
                   <thead>
@@ -57,41 +56,13 @@
 
 
 
-const TabelaBebidas__ = () => {
 
-return (
-
-<div>
-
-<h1>Tabela de Bebidas</h1>
-
-<table id="tabela" border="1">
-
-<thead>
-
-<tr><th>Nome</th><th>Marca</th></tr>
-
-</thead>
-
-<tbody>
-
-<tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-)  
-
-}
 
 
 
 ReactDOM.render(
 
-<TabelaBebidas/>
+<TabelaBebidas titulo="minha tabela de cana"/>
 
 ,
 
