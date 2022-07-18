@@ -1,4 +1,4 @@
-export default function Home(){
+xport default function Home(){
 
     return (
  
@@ -7,11 +7,23 @@ export default function Home(){
           <h2>
  
             Viva Santana!
+         </h2>
  
-          </h2>
- 
+          <Novo_Componente/>
        </div>
+
+       
  
     )
  
  }
+
+ export function Novo_Componente(){
+
+   return (
+
+      <h2>Novo Componente</h2>
+
+   )
+
+}
